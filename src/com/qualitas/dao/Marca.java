@@ -17,6 +17,11 @@ public class Marca {
 	public void setNombreCorto(String nombreCorto) {
 		this.nombreCorto = nombreCorto;
 	}
+	public Marca(String nombre, String nombreCorto) {
+		super();
+		this.nombre = nombre;
+		this.nombreCorto = nombreCorto;
+	}
 	
 	
 }
