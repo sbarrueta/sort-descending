@@ -23,5 +23,16 @@ public class Marca {
 		this.nombreCorto = nombreCorto;
 	}
 	
+	public boolean equals(Object parametro) {
+		boolean respuesta = false;
+		if (parametro instanceof Marca) {
+			Marca instancia = (Marca) parametro;
+			if (getNombre().equals(instancia.getNombre()) && getNombreCorto().equals(instancia.getNombreCorto())) {
+				respuesta = true;
+			}
+		}
+		return respuesta;
+	}
+	
 	
 }

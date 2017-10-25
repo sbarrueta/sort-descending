@@ -27,7 +27,9 @@ public class MarcaService {
 	public boolean existeMarca(Marca marca) {
 		List<Marca> lista = dameMarcas();
 		for (Marca item : lista) {
-			if (item.getNombre().equals(marca.getNombre())) {
+			if (item.getNombre().equals(marca.getNombre())
+					&& item.getNombreCorto().equals(marca.getNombreCorto())
+				) {
 				return true;
 			}
 		}

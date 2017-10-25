@@ -16,8 +16,8 @@ public class Pregunta {
 		
 		Marca marca2 = new Marca("FORD","FD");
 		
-		System.out.println(marca1 == marca2);
-		System.out.println(marca1.equals(marca2));
+		System.out.println(marca1 == marca2);//false
+		System.out.println(marca1.equals(marca2));// false
 		
 	}
 }
